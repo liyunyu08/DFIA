@@ -233,7 +233,7 @@ def parse_args(arg_mode):
     ''' about training specs '''
     parser.add_argument('-batch', type=int, default=64, help='auxiliary batch size')
     parser.add_argument('-temperature', type=float, default=2, metavar='tau', help='temperature for metric-based loss')
-    parser.add_argument('-lamb', type=float, default=1.5, metavar='lambda', help='loss balancing term')
+    parser.add_argument('-lamb', type=float, default=1.2, metavar='lambda', help='loss balancing term')
     parser.add_argument('-temperature_attn', type=float, default=5.0, metavar='gamma', help='temperature for softmax in computing cross-attention')
     parser.add_argument('-method', type=str, default='Task_trans', help='method')
     parser.add_argument('-resnet', action='store_true', help='model')
